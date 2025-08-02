@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Bungee';
+  src: url('/font/Bungee-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/font/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.navbar {
+  width: 40vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar button {
+  border: none;
+  background: transparent;
+  font-family: 'Bungee', sans-serif;
+  font-size:1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+.navbar button::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 0.2rem;
+  background-color: #008080 ;
+  transition: width 0.5s ease;
+  transform: translateX(-50%);
+}
+
+.navbar button.hoverd::after {
+  width: 80%;
+}
+
+.navbar button.active::after {
+  background-color: aqua;
+  width: 80%;
+}
+
+.content{
+  width:50%;
+  margin:0 auto;
+  font-family:'Roboto',sans-serif;
+  font-size:1.5rem;
+}
+
+.line{
+  width:50%;
+  height:2px;
+  background:black;
+  margin:2rem auto;
+}
+
+.avatar{
+  max-height:20vh;
+  float:right;
+  margin:0 2rem;
+}
+
+span{
+  background: linear-gradient(to right, #3b82f6, #06b6d4);
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor:pointer;
+}
+
+
+
