@@ -11,6 +11,8 @@ export const HorizontalGroup = () => {
   const sections:string[] = ["home", "about", "projects", "contact"];
   return (
     <div>
+      <div className="emptybox"></div>
+    <div className="landpage">
       <Navbar
         sections={sections}
         activeSection={activeSection}
@@ -18,15 +20,17 @@ export const HorizontalGroup = () => {
         hoverSection={hoverSection}
         setHoverSection={setHoverSection}
         />
-      <div className="line">
+      <div className="linex">
 
       </div>
-      <main>
+      <main className="maincontent">
         {activeSection === "home" && <Home setActiveSection={setActiveSection} setHoverSection={setHoverSection}/>}
         {activeSection === "about" && <About />}
         {activeSection === "projects" && <Projects />}
         {activeSection === "contact" && <Contact />}
       </main>
+    </div>
+    <div className="emptybox"></div>
     </div>
   );
 };
