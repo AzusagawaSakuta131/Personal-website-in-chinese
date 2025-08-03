@@ -7,19 +7,19 @@ export const Contact = () => {
     id: "Twitter",
     img: "./twitter.svg",
     text: "Feel free to see my life on Twitter !",
-    href: "https://twitter.com"
+    href: "https://x.com/SakutaAzusaW"
   },
   {
     id: "GitHub",
     img: "./github.svg",
     text: "Explore my projects on GitHub",
-    href: "https://github.com"
+    href: "https://github.com/AzusagawaSakuta131"
   },
   {
     id: "LinkedIn",
     img: "./linkedin.svg",
     text: "I'm open to collaboration opportunities on LinkedIn",
-    href: "https://linkedin.com"
+    href: "https://www.linkedin.com/in/sakuta-azusagawa-55b355372/"
   }
 ];
 
