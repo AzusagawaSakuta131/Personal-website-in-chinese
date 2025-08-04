@@ -11,9 +11,10 @@
   font-style: normal;
 }
 body{
-    background-color: #99cfcc;
-background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png");
+   background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  color:white;
 }
 *{
   box-sizing:border-box;
@@ -39,6 +40,7 @@ background-image: url("https://www.transparenttextures.com/patterns/diagonal-str
   font-size:1.5rem;
   position: relative;
   cursor: pointer;
+  color:white;
 }
 .navbar button::after {
   content: '';
@@ -47,7 +49,7 @@ background-image: url("https://www.transparenttextures.com/patterns/diagonal-str
   bottom: -4px;
   width: 0;
   height: 0.2rem;
-  background-color: #008080 ;
+  background-color: #444444 ;
   transition: width 0.5s ease;
   transform: translateX(-50%);
 }
@@ -65,20 +67,20 @@ background-image: url("https://www.transparenttextures.com/patterns/diagonal-str
   width:50%;
   margin:0 auto;
   font-family:'Roboto',sans-serif;
-  font-size:1.5rem;
+  font-size:1rem;
 }
 
 .linex{
   width:50%;
   height:2px;
-  background:black;
+  background:#444444;
   margin:2rem auto;
 }
 .liney{
   height:100%;
   width:1px;
   margin:0 3rem;
-  background:black;
+  background:#444444;
 }
 .avatar{
   max-height:20vh;
@@ -101,7 +103,7 @@ span{
   transition: background-color 0.3s ease;
 }
 .linkcard.hover{
-  background:	#008080;
+  background:	#444444;
   color:aqua;
 }
 .linktext{
@@ -110,7 +112,7 @@ span{
 
 a{
   text-decoration: none;
-  color:#008080;
+  color:#444444;
 }
 .linkicon{
   max-width:10%;
